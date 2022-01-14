@@ -14,7 +14,7 @@
     </jsp:attribute>
     <jsp:body>
         <h2>
-        	<c:if test="${feeding['new']}">New </c:if> Feeding
+        New feeding
     	</h2>
         <form:form modelAttribute="feeding" class="form-horizontal" id="add-feeding-form">
             <div class="form-group has-feedback">
@@ -33,14 +33,10 @@
                        
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <c:choose>
-                        <c:when test="${feeding['new']}">
+               
                             <button class="btn btn-default" type="submit">Add Feeding</button>
-                        </c:when>
-                        <c:otherwise>
-                            <button class="btn btn-default" type="submit">Update Feeding</button>
-                        </c:otherwise>
-                    </c:choose>
+                     
+                      
                 </div>
             </div>
         </form:form>
